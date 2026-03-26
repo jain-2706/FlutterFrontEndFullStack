@@ -53,3 +53,14 @@ This is a Flutter application that demonstrates **form validation**, **REST API 
 ---
 
 ## 📂 Project Structure
+
+---
+
+## ▶️ Run Locally
+
+1. Clone the repository:
+```bash
+git clone https://github.com/jain-2706/FlutterFrontEndFullStack.git
+cd full_stack
+flutter pub get
+flutter run

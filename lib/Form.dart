@@ -23,7 +23,9 @@ class _FormClassState extends State<FormClass> {
   }
 
   void gettingMessage() async {
-    var response = await hty.get(Uri.parse("http://192.168.1.20:1234/project"));
+    var response = await hty.get(
+      Uri.parse("http://172.16.44.128:1234/project"),
+    );
     if (response.statusCode == 200) {
       var resp = response.body;
       var responseBody = List<Map<String, dynamic>>.from(json.decode(resp));
@@ -88,7 +90,7 @@ class _FormClassState extends State<FormClass> {
                       return Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
+                          SizedBox(
                             width: double.infinity,
 
                             child: Text(
@@ -107,7 +109,7 @@ class _FormClassState extends State<FormClass> {
                     if (_key.currentState!.validate()) {
                       _key.currentState!.save();
                       final ans = await hty.post(
-                        Uri.parse("http://192.168.1.20:1234/post"),
+                        Uri.parse("http://172.16.44.128:1234/post"),
                         headers: {'Content-Type': "application/json"},
                         body: json.encode({
                           "username": username,
@@ -116,12 +118,14 @@ class _FormClassState extends State<FormClass> {
                       );
                       if (ans.statusCode == 201) {
                         var again = await hty.get(
-                          Uri.parse("http://192.168.1.20:1234/project"),
+                          Uri.parse("http://172.16.44.128:1234/project"),
                         );
 
                         if (again.statusCode == 200) {
+                          var a = json.decode(again.body);
+                          var toset = List<Map<String, dynamic>>.from(a);
                           setState(() {
-                            data = json.decode(again.body);
+                            data = toset;
                           });
                         }
 

@@ -1,16 +1,38 @@
-# full_stack
+# 🚀 Flutter Form App with Backend Integration
 
-A new Flutter project.
+This is a Flutter application that demonstrates **form validation**, **API integration**, and **dynamic data fetching** using HTTP requests.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📌 Features
 
-A few resources to get you started if this is your first Flutter project:
+- ✅ Form Validation (Username & Email)
+- ✅ REST API Integration (GET & POST)
+- ✅ Dynamic Data Rendering (ListView)
+- ✅ State Management using `setState`
+- ✅ Backend Connectivity (Spring Boot / Node.js supported)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+- **Frontend:** Flutter (Dart)
+- **Backend:** REST API (Spring Boot / Node.js)
+- **Networking:** http package
+- **UI:** Material Design
+
+---
+
+## 📸 Screenshots
+
+<!-- Add your images here -->
+<!-- Example: -->
+<!-- ![Home](screenshots/home.png) -->
+
+---
+
+## ⚙️ How It Works
+
+### 🔹 Fetch Data
+- On app start (`initState`)
+- Sends GET request to:

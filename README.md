@@ -64,3 +64,15 @@ git clone https://github.com/jain-2706/FlutterFrontEndFullStack.git
 cd full_stack
 flutter pub get
 flutter run
+
+
+
+## ⚠️ Backend Note
+
+This app uses a locally running backend server.
+
+- The backend (Spring Boot) must be running manually.
+- API is hosted on a local IP address (e.g., http://172.16.44.128:1234).
+- Both the mobile device/emulator and backend must be on the same WiFi network.
+
+❗ This project will not work over the internet unless the backend is deployed.

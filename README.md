@@ -65,7 +65,7 @@ cd full_stack
 flutter pub get
 flutter run
 
-
+```
 
 ## ⚠️ Backend Note
 

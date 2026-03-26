@@ -76,3 +76,25 @@ This app uses a locally running backend server.
 - Both the mobile device/emulator and backend must be on the same WiFi network.
 
 ❗ This project will not work over the internet unless the backend is deployed.
+
+
+---
+
+## 🎯 Key Learnings
+
+- Learned API integration in Flutter  
+- Understood client-server architecture  
+- Implemented real-time data fetching  
+- Practiced form validation and state management  
+
+---
+
+## 👨‍💻 Author
+
+**Bhavy Jain**
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
